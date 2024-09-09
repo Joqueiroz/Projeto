@@ -1,0 +1,15 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Projeto de Reserva de Salas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js"
+  },
+  "author": "Joao Vitor, Clara, Joao Pedro A",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
