@@ -1,111 +1,124 @@
-/*Estilos aplicados ao website Prototipando...*/
-
-/*Seletor Universal - seleciona todos os elementos página e aplica estilos comuns padronizados*/
-*{
-    margin: 20; /*remove a margem padrão de todos os elementos*/
-    padding: 20; /*remove o padding de todos os elementos*/
-    box-sizing: border-box; /*Inclui borads e reenchimentos no calculo da largura e a altura dos elementos*/
-}/*Fechamento do seletor universal*/
-
-body{
-    font-family: arial, sans-serif; /*define a fonte da pagina como arial, com uma alternativa de sans-serif*/
-    background-color: #F0E7E7; /*define a cor de fundo do body / corpo do html*/
-    color: rgb(0, 0, 0); /*define a cor do texto com um tom suave de branco*/
-    overflow: hidden;
+* {
     margin: 0;
     padding: 0;
-}/*fechamento do body*/
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
-/*Estilo do cabeçalho*/
-header{
-    background-color:#be2e2e;
-    height: 80px;
+body {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #DCD3D3;
     width: 100%;
-}/*fechamento do header*/
-
-header img{
-    max-width: 100%; /* Ajusta a largura da imagem */
-    height: 40px; /* Mantém a proporção da imagem */
-    margin: 20px 44%;
-
-}
-
-header button{
-    right: 50px;/*alinha o botão á direita, com 20px de distância da borda direita da página*/
-    top: 30px;
-    position:absolute;/*posiciona o botao de forma absoluta com relação ao cabeçlho*/
-    background-color: #f18787;
-    padding: 10px 10px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    color:black;
-}/*fechamento do header button*/
-
-
-
-main{
-    padding: 0px;
+    max-width: 400px;
     text-align: center;
-}/*fechamento main*/
-
-main img{
-    max-width: 250px;
-}/*fechamento main img*/
-
-section{
-    margin: 10px 4px;
-}
-/*estilho do rodapé / footer*/
-footer {
-    background-color: #df2929;
-    color:#000000;
-    left:#000000;
-    text-align: center;
-    padding: 10px;
-    bottom: 0;
-    position: absolute;
-    left: 0;
-    width: 100%;
-}/*fechamento do footer*/
-
-main section button{
-    position: absolute;
-    top:75%;
-    right:48%;
-}
-
-main section form{
-    position: absolute;
-    right: 42%;
-   
-}
-.login{
-    color:#000000;
-    font-size: 10px;
-    width: 300px;
-    height: 240px;
-    margin: 100px auto;
     padding: 20px;
-    background-color:rgb(158, 150, 150);
     border-radius: 10px;
-    text-align: center;
-    position: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
 }
-.botaologin{
-    font-size: 20px;
-    width: 270px;
-    height: 40px;
+
+header {
+    background-color: #fc0000;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-container h1 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.header-container img {
+    max-width: 100%; /* Faz a imagem nunca ultrapassar o tamanho do container */
+    height: auto;    /* Mantém a proporção da imagem */
+    width: 200px;    /* Limita o tamanho da largura para ficar proporcional ao header */
+    margin-top: 10px;
+}
+
+.login-box {
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"] {
     padding: 10px;
-    background-color: red;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #FA0000;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    position: center;
-    bottom: 20px;
-    text-align: center; 
-    margin: 60px -142px;    
-    
-  
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #d8433e;
+}
+
+p {
+    margin-top: 20px;
+}
+
+a {
+    color: #f35d56;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #ff0000;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-container p {
+    color: white;
+    font-size: 1em;
+}
+.header-home{
+    display: flex;
+    justify-content:end;
+    align-items: end;
+}
+.backhome {
+    padding: 5px 20px;
+    background-color: #f35d56;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align:right
 }
