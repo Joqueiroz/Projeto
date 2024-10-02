@@ -11,7 +11,7 @@
   <body>
     <!--Tag semântica de cabeçalho-->
     <header>
-      <h3>Página Login</h3>
+      <img src="senaisplogo.png" alt="Logo SENAI SP"/>
       <button onclick="window.location.href='index.html'">Home</button>
     </header>
 
@@ -19,29 +19,25 @@
     <main>
 
         <!--Primeira sessão do conteúdo-->
-        <section>
-            <img src="senaisplogo.png" alt="Logo SENAI SP"/>
-        </section>
 
         <!--Segunda sessão do conteúdo-->
-        <section>
-            <h2>Login</h2>
+        <section class="login">
             <br>
             <br>
             <form>
-            <label for="username">Usuário:</label>
+            <label for="Email ou cpf">Email ou cpf:</label>
             <input type="text" name="username"/>
             <br>
             <br>
             <label for="senha">Senha:</label>
             <input type="password" name="senha"/>
-            <br>
+            <button type="submit" class="botaologin">Login</button>
+          </section>
             </form>
-            <button type="submit">Entrar</button>
+            
             <br/>
-        </section>
         <footer>
-          <p>Desenvolvido por: Clara</p>
+          <p>Desenvolvido por: Clara, João Vitor e João Pedro A</p>
         </footer>
     </main>
   </body>
