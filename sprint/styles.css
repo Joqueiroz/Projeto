@@ -1,0 +1,80 @@
+/*Estilos aplicados ao website Prototipando...*/
+
+/*Seletor Universal - seleciona todos os elementos página e aplica estilos comuns padronizados*/
+*{
+    margin: 20; /*remove a margem padrão de todos os elementos*/
+    padding: 20; /*remove o padding de todos os elementos*/
+    box-sizing: border-box; /*Inclui borads e reenchimentos no calculo da largura e a altura dos elementos*/
+}/*Fechamento do seletor universal*/
+
+body{
+    font-family: arial, sans-serif; /*define a fonte da pagina como arial, com uma alternativa de sans-serif*/
+    background-color: #ffffff; /*define a cor de fundo do body / corpo do html*/
+    color: rgb(0, 0, 0); /*define a cor do texto com um tom suave de branco*/
+}/*fechamento do body*/
+
+/*Estilo do cabeçalho*/
+header{
+    background-color: #fefefe;
+    padding: 40px;
+    text-align: center;
+    color:#281c1c;
+    
+
+}/*fechamento do header*/
+
+
+header button{
+    right: 50px;/*alinha o botão á direita, com 20px de distância da borda direita da página*/
+    top: 45px;
+    position:absolute;/*posiciona o botao de forma absoluta com relação ao cabeçlho*/
+    background-color: #b50303;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color:black;
+}/*fechamento do header button*/
+
+
+header h3{
+    margin: 0;
+    padding: 0;
+}/*fechamento header h3*/
+
+main{
+    padding: 0px;
+    text-align: center;
+}/*fechamento main*/
+
+main img{
+    max-width: 250px;
+}/*fechamento main img*/
+
+section{
+    margin: 50px 4px;
+}
+/*estilho do rodapé / footer*/
+footer {
+    background-color: #df2929;
+    color:#000000;
+    left:#000000;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}/*fechamento do footer*/
+
+main section button{
+    position: absolute;
+    top:75%;
+    right:48%;
+}
+
+main section form{
+    position: absolute;
+    right: 42%;
+   
+}
