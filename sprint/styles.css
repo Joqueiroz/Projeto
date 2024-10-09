@@ -49,10 +49,6 @@ header {
     margin-top: 10px;
 }
 
-.login-box {
-    margin-top: 20px;
-}
-
 form {
     display: flex;
     flex-direction: column;
@@ -121,4 +117,5 @@ footer {
     border-radius: 5px;
     font-size: 20px;
     text-align:right
+    
 }
