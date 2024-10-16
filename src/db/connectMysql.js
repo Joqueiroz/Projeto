@@ -10,7 +10,7 @@ module.exports = function connectMysql() {
       }
       console.log("A conexão com MySQL foi bem-sucedida.");
     });
-  } catch(error) {
+  } catch (error) {
     console.error("Erro ao executar a consulta.", error);
   }
 };

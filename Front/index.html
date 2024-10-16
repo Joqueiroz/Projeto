@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login SENAI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <main class="header-home">
+        <a href="home.html" class="botao-home">Home</a>
+      </main>
+      <div class="header-logo">
+        <img src="senailogo.png" alt="Logo do SENAI" />
+      </div>
+    </header>
+
+    <div class="corpo">
+      <form >
+        <label for="email">Email ou CPF</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Digite seu email ou CPF"
+          required
+        />
+
+        <label for="password">Senha</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Digite sua senha"
+          required
+        />
+
+        <button type="submit">Login</button>
+
+        <p> Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
+      </form>
+    </div>
+
+    <footer>
+        <p>Desenvolvido por João Vitor, Clara e João Pedro A</p>
+    </footer>
+  </body>
+</html>

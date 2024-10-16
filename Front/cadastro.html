@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <main class="header-home">
+        <a href="home.html" class="botao-home">Home</a>
+      </main>
+      <div class="header-logo">
+        <img src="senailogo.png" alt="Logo do SENAI" />
+      </div>
+    </header>
+
+    <div class="corpo">
+      <h2>Cadastre-se</h2>
+      <form action="#">
+        <label for="name">Nome </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Digite seu nome completo"
+        />
+
+        <label for="cpf">CPF</label>
+        <input
+          type="text"
+          id="cpf"
+          name="cpf"
+          placeholder="Digite seu CPF"
+          required
+        />
+
+        <label for="password">Email</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Digite seu email"
+          required
+        />
+
+        <label for="confirm-password">Senha</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          placeholder="Digite sua senha"
+          required
+        />
+
+        <button type="submit">Cadastrar</button>
+
+        <p>Já tem uma conta? <a href="index.html">Faça login aqui</a></p>
+      </form>
+    </div>
+
+    <footer>
+        <p>Desenvolvido por João Vitor, Clara e João Pedro A</p>
+    </footer>
+  </body>
+</html>
