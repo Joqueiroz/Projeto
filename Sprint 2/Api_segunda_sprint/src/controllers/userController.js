@@ -154,7 +154,7 @@ module.exports = class userController {
   
         if (results.length === 0) {
         
-          return res.status(401).json({ error: "Email não encontrado" });
+          return res.status(401).json({ error: "Email e Senha não encontrado" });
         }
   
         // Login bem-sucedido
