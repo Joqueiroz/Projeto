@@ -1,0 +1,32 @@
+\connect alunods@localhost:3306
+senai@604
+n
+\sql
+create database banco_salas;
+use banco_salas;
+
+create table usuario(
+id_usuario int auto_increment primary key,
+name varchar(100) not null,
+email varchar(255) not null unique,
+cpf varchar(11) not null unique,
+password varchar(50) not null
+);
+
+create table salas(
+id_salas int auto_increment primary key,
+descricao varchar(255) not null,
+nome varchar(100) not null,
+status_sala TINYINT not null,
+capacidade int not null
+);
+
+create table reserva(
+id_reserva int auto_increment primary key,
+data_hora datetime not null,
+status_reserva TINYINT not null,
+id_usuario int not null,
+id_salas int not null,
+foreign key (id_usuario) references usuario(id_usuario),
+foreign key (id_salas) references salas(id_salas)
+);
