@@ -73,7 +73,7 @@ module.exports = class userController {
         .status(400)
         .json({ error: "Todos os campos devem ser preenchidos" });
     }
-    const query = `UPDATE Usuario SET name=?,email=?,password=?,cpf=? WHERE id_Usuario = ?`;
+    const query = `UPDATE usuario SET cpf=?,email=?,password=?,name=? WHERE id_Usuario = ?`;
     const values = [name, email, password, cpf, id];
 
     try {
