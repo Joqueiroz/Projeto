@@ -1,102 +1,118 @@
 * {
-  margin: 0; 
-  padding: 0; 
-  box-sizing: border-box; 
-  font-family: Arial, sans-serif; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
+
 body {
-  background-color: #f2f2f2; 
-  display: flex; /* Usando flexbox para layout */
-  flex-direction: column; /* Os itens dentro do body serão dispostos em coluna */
-  justify-content:space-between ;
-  min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura total da janela */
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
+
 .corpo {
-  background-color: #dcd3d3; 
-  width: 100%; /* Ocupa 100% da largura disponivel (400 pixels) */
-  max-width: 400px; /* Define uma largura máxima de 400 pixels */
-  text-align: center; /* Centraliza o texto dentro do contêiner */
-  padding: 20px; /* Adiciona preenchimento em volta de 20 pixels */
-  border-radius: 20px; /* Arredonda os cantos do contêiner */
-  margin: auto; /* Centraliza o contêiner horizontalmente */
+  background-color: #dcd3d3;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  margin: auto;
 }
+
 header {
   background-color: #fc0000;
-  padding: 10px 0; /* Adiciona preenchimento superior e inferior ao cabeçalho */
-  text-align: center; /* Centraliza o conteúdo do cabeçalho */
-}
-.header-logo img {
-  max-width: 100%; /* A imagem não ultrapassa a largura do header */
-  height: auto; /* Mantém a proporção da imagem */
-  width: 200px; /* Define uma largura fixa de 200 pixels */
-}
-form {
-  display: flex; /* Usando flexbox para layout do formulário */
-  flex-direction: column; /* Os elementos do formulário serão dispostos em coluna */
-}
-label {
-  text-align: left; /* Alinha o texto do rótulo à esquerda */
-  margin-bottom: 5px; /* Adiciona uma margem inferior de 5 pixels */
-  font-weight: bold; /* Define o texto do rótulo como negrito */
-}
-input {
-  padding: 10px; /* Adiciona preenchimento onde a pessoa ira escrever (10 pixels) */
-  margin-bottom: 20px; /* Adiciona uma margem de 20 pixels entre Nome, Email, Senha etc */
-  border: 1px solid #ccc; 
-  border-radius: 10px; 
-}
-button {
-  padding: 10px; 
-  background-color: #fa0000; 
-  color: white; 
-  border: none; /* Remove a borda padrão */
-  border-radius: 10px; 
-  cursor: pointer; /* Muda o cursor para indicar que é clicável */
-  font-size:medium; /* Define o tamanho da fonte do botão */
-}
-p {
-  margin-top: 20px; /* Adiciona uma margem superior de 20 pixels */
-}
-footer {
-  background-color: #ff0000; 
-  padding: 10px 0; /* Adiciona preenchimento superior e inferior ao rodapé */
-  text-align: center; 
-  color: white; 
-}
-.header-home {
-  display: flex; /* Usando flexbox para layout da seção de navegação */
-  justify-content: end; /* Alinha os itens para o final do header  */
-  align-items: end; /* Alinha os itens na parte inferior do header */
-}
-.botao-home {
-  padding: 5px 15px; /* Adiciona preenchimento em volta */
-  background-color: #f35d56; 
-  color: white; 
-  border-radius: 10px; 
-  font-size: x-large; /* Define um tamanho de fonte maior */
-  text-align: right; /* Alinha o texto à direita */
-}
-.header2 {
-  background-color: #ff0000;
-  padding: 40px 0px;
+  padding: 10px 0;
   text-align: center;
 }
-.button-home2{
-   display: flex;
-   justify-content: center;
-   align-items: center;
+
+.header-logo img {
+  max-width: 100%;
+  height: auto;
+  width: 200px;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #fa0000;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: medium;
+}
+
+p {
+  margin-top: 20px;
+}
+
+footer.rodape {
+  background-color: #ff0000;
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+}
+
+.header2 {
+  background-color: #ff0000;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.button-home2 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+
 .button2 {
-    padding: 5px 20px;
-    background-color: #f35d56;
-    color: white;
-    border-radius: 5px;
-    font-size: 20px;
-    text-align: center
+  padding: 5px 20px;
+  background-color: #f35d56;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
 }
+
+.button2:hover {
+  background-color: #d14c46;
+}
+
+.Div1 {
+  background-color: #dcd3d3;
+  width: 40%;
+}
+
 .rodape {
-    background-color: #ff0000;
-    padding: 40px 0;
-    text-align: center;
-    margin-top: 20px;
+  background-color: #ff0000;
+  padding: 40px 0;
+  text-align: center;
+  margin-top: 20px;
 }
