@@ -20,14 +20,16 @@ nome varchar(100) not null,
 status_sala TINYINT not null, (para armazenar, Valores booleanos: Representando verdadeiro ou falso, códigos pequenos:
  Como status que não requerem um intervalo maior.
 capacidade int( números inteiros) not null (tanto de pessoas q cabem na salas)
+)
 );
 
 create table reserva(
 id_reserva int auto_increment primary key,
-data_hora datetime not null,
+data_inicio datetime not null,
+data_fim datetime not null,
 status_reserva TINYINT not null,
 id_usuario int not null,
 id_salas int not null,
 foreign key (id_usuario) references usuario(id_usuario),
-foreign key (id_salas) references salas(id_salas)
+foreign key (id_sala) references salas(id_salas)
 );
