@@ -128,6 +128,7 @@ module.exports = class userController {
       return res.status(500).json({ error: "Erro interno do servidor" });
     }
   }
+  
   static async loginUser(req, res) {
     const { email, password } = req.body;
   
