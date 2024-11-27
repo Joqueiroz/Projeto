@@ -21,4 +21,5 @@ router.get("/salas/", SalasController.getAllSalas);
 router.put("/salas/", SalasController.updateSala);
 router.delete("/salas/:id_sala", SalasController.deleteSala);
 
+
 module.exports = router;
