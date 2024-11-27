@@ -1,0 +1,123 @@
+/* Reset de algumas configurações básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Definindo fontes e configurações gerais */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color:#F0E7E7; /* Cor de fundo geral */
+    color: black; /* Cor do texto geral */
+  }
+  
+  header {
+    background-color: #FC0000; /* Cor de fundo do cabeçalho */
+    color: black; /* Cor do texto do cabeçalho */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header img {
+    width: 150px;
+  }
+  
+  nav a {
+    color: black; /* Cor dos links de navegação */
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: black; /* Cor dos links de navegação quando passam o mouse */
+  }
+  
+  /* Estilo do título principal */
+  h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: black; /* Cor do título principal */
+  }
+  
+  /* Estilos do formulário */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:rgb(169, 169, 169); /* Cor de fundo do formulário */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white; /* Cor das labels */
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="time"],
+  input[type="date"],
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid white; /* Cor da borda dos campos de entrada */
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="time"]:focus,
+  input[type="date"]:focus,
+  select:focus {
+    border-color: white; /* Cor da borda quando o campo está em foco */
+    outline: none;
+  }
+  
+  button[type="submit"] {
+    background-color: red; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: rgb(212, 44, 44); /* Cor de fundo do botão ao passar o mouse */
+  }
+  
+  /* Estilo do rodapé */
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: red; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto do rodapé */
+  }
+  
+  /* Estilos do calendário */
+  #calendar {
+    max-width: 900px;
+    margin: 40px auto;
+  }
+  
+
+  
+  

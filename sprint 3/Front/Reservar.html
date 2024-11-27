@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserva de Sala</title>
+    <link rel="stylesheet" href="styleReservas.css" />
+  </head>
+  <body>
+    <header>
+      <img src="senailogo.png" alt="Logo do SENAI" />
+      <nav>
+        <a href="home.html">Home</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Reserva de Sala</h1>
+      <form action="processar_reserva.php" method="POST">
+        <div class="form-group">
+          <label for="sala">Escolha a Sala:</label>
+          <select id="sala" name="sala" required>
+            <option value="sala1">Sala 1 - Capacidade: 10 pessoas</option>
+            <option value="sala2">Sala 2 - Capacidade: 20 pessoas</option>
+            <option value="sala3">Sala 3 - Capacidade: 30 pessoas</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+            <form id="form-selecao-data">
+                <label for="data">Escolha a data:</label>
+                <input
+                  type="date"
+                  id="data"
+                  name="data"
+                  min="2024-01-01"
+                  max="2024-12-31"
+                />
+
+        <div class="form-group">
+          <label for="hora">Hora de Início:</label>
+          <input type="time" id="hora" name="hora" required />
+        </div>
+
+        <div class="form-group">
+          <label for="duracao">Duração (em horas):</label>
+          <input type="number" id="duracao" name="duracao" min="1" max="12" required />
+        </div>
+
+        <div class="form-group">
+          <label for="nome">Nome do Solicitante:</label>
+          <input type="text" id="nome" name="nome" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail de Contato:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <button type="submit">Reservar</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>Desenvolvido por João Vitor, Clara e João Pedro A</p>
+    </footer>
+
+    <!-- Scripts para FullCalendar -->    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          plugins: ['dayGrid', 'timeGrid', 'list'],
+          initialView: 'dayGridMonth', // Exibe o calendário mensal inicialmente
+          dateClick: function(info) {
+            // Quando o usuário clicar em uma data, ela será inserida no campo hidden
+            document.getElementById('data').value = info.dateStr; // Preenche o campo oculto com a data selecionada
+          }
+        });
+
+        calendar.render(); // Renderiza o calendário
+      });
+    </script>
+  </body>
+</html>
