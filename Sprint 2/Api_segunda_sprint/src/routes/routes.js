@@ -2,6 +2,7 @@ const router = require("express").Router();
 
 const userController = require("../controllers/userController");
 const ReservaController = require("../controllers/ReservaController");
+const SalasController = require("../controllers/SalasController");
 
 
 router.post("/users/", userController.createUser);
@@ -19,6 +20,5 @@ router.post("/salas/", SalasController.salascreate);
 router.get("/salas/", SalasController.getAllSalas);
 router.put("/salas/", SalasController.updateSala);
 router.delete("/salas/:id_sala", SalasController.deleteSala);
-
 
 module.exports = router;
