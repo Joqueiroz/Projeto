@@ -15,7 +15,7 @@ document
     const password = document.getElementById("password").value;
 
     //Requisição HTTP para o endpoint de cadastro de usuario
-    fetch("http://localhost:5000/api/v2/users", {
+    fetch("http://10.89.240.77:5000/api/v2/users", {
       //Realiza uma chamada http para o servidor(a rota definida)
       method: "POST",
       headers: {
@@ -69,7 +69,7 @@ function login(event) {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
-    fetch("http://localhost:5000/api/v2/login", { // Ajuste a URL conforme necessário
+    fetch("http://10.89.240.77:5000/api/v2/login", { // Ajuste a URL conforme necessário
         method: "POST",
         headers: {
             "Content-Type": "application/json",

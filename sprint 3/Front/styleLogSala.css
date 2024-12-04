@@ -1,0 +1,116 @@
+/* Reset de margens e padding para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif; /* Define uma fonte padrão */
+    background-color: #ccc; /* Cor de fundo suave */
+    color: #333; /* Cor do texto */
+    line-height: 1.6; /* Espaçamento entre as linhas de texto */
+  }
+  
+  header {
+    background-color: #ed0b0b; /* Cor de fundo escura */
+    color: #fff; /* Texto branco */
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  header button {
+    background-color: #ccc; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  header button:hover {
+    background-color: #ed0b0b; /* Cor ao passar o mouse */
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  #home {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #0f0101;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Estilo da tabela */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  td {
+    background-color: #fff;
+  }
+  
+  /* Estilo de hover para as células da tabela */
+  tr:hover td {
+    background-color: #f1f1f1;
+  }
+  
+  footer {
+    background-color: #ed0b0b;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }
+  
+  /* Estilo responsivo */
+  @media (max-width: 768px) {
+    header button {
+      width: 100%;
+      padding: 15px 0;
+      font-size: 18px;
+    }
+  
+    table {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    th, td {
+      padding: 8px;
+    }
+  }
