@@ -61,10 +61,10 @@ module.exports = class ReservaController {
       connect.query(query, valoresConflicto, (err, results) => {
         // Verifica se ocorreu algum erro durante a execução da query
         if (err) {
-          console.error("Erro ao verificar conflito de reserva:", err);
+          console.error("Erro ao verificar reservas:", err);
           return res
             .status(500)
-            .json({ error: "Erro ao verificar disponibilidade da sala" });
+            .json({ error: "Erro ao verificar reservas" });
         }
 
         // Se encontrar algum conflito, retorna erro
@@ -166,13 +166,13 @@ module.exports = class ReservaController {
   
     // Query para verificar se já existe uma reserva no horário solicitado
     const query = `
-      SELECT * FROM reserva 
-      WHERE id_sala = ? 
-      AND id_reserva != ? 
-      AND (
-        (data_inicio < ? AND data_fim > ?) OR 
-        (data_inicio >= ? AND data_inicio < ?)
-      )`;
+     SELECT * FROM reserva WHERE id_sala = ?  -- Verifica se a reserva pertence à sala especificada
+     AND id_reserva != ?  -- Sem essa condição, o sistema pode identificar a própria reserva como um conflito ao tentar atualizar seus horários.
+     AND (
+  (data_inicio < ? AND data_fim > ?)  -- Caso 1: Verifica se a nova reserva começa antes do término e termina depois do início de uma reserva existente (sobreposição total ou parcial)
+  OR 
+  (data_inicio >= ? AND data_inicio < ?)  -- Caso 2: Verifica se a nova reserva começa durante uma reserva existente (sobreposição parcial)
+)`;
   
     const valoresConflicto = [
       id_sala,
@@ -187,10 +187,10 @@ module.exports = class ReservaController {
       connect.query(query, valoresConflicto, (err, results) => {
         // Verifica se ocorreu algum erro durante a execução da query
         if (err) {
-          console.error("Erro ao verificar conflito de reserva:", err);
+          console.error("Erro ao verificar reservas:", err);
           return res
             .status(500)
-            .json({ error: "Erro ao verificar disponibilidade da sala" });
+            .json({ error: "Erro ao verificar reservas" });
         }
   
         // Se encontrar algum conflito, retorna erro
